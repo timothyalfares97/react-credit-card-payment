@@ -1,6 +1,48 @@
 .Card-container {
   width: 280px;
-  height: 160px;
-  border-radius: 6px;
-  border: 1px solid black;
+  height: 170px;
+  border-radius: 12px;
+  /* background-color: #fefefe; */
+  background: url('../assets/background.jpeg');
+  background-size: 100% 100%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 16px;
+}
+
+.Card-logo {
+  width: 70px;
+  height: 50px;
+}
+
+.Card-chip {
+  width: 35px;
+  height: 35px;
+  margin-left: 15px;
+  margin-top: 10px;
+}
+
+.Card-bank-name {
+  font-size: 26px;
+  text-align: right;
+  margin-right: 8px;
+}
+
+.Card-bank-number {
+  font-size: 20px;
+  font-family: 'Courier New', Courier, monospace;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+.Card-name-holder {
+  font-size: 16px;
+  font-family: 'Courier New', Courier, monospace;
+  margin-left: 10px;
+}
+
+.Card-bottom-row {
+  display: flex;
+  flex-direction: row;
+  margin-top: 5px;
+  align-items: center;
 }

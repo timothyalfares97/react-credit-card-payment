@@ -1,5 +1,5 @@
 .App {
-  text-align: center;
+  margin: 5%;
 }
 
 .App-logo {
@@ -24,7 +24,6 @@
 
 .App-card-container {
   display: flex;
-  justify-content: center;
 }
 
 @keyframes App-logo-spin {
