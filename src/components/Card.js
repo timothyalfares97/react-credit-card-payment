@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import './Card.css'
 import backgroundLight from '../assets/backgroundLight.jpeg'
 import backgroundDark from '../assets/backgroundDark.jpeg'
 import mastercardLight from '../assets/mastercardLight.png'
@@ -7,16 +6,19 @@ import mastercardDark from '../assets/mastercardDark.png'
 import visaDark from '../assets/visaDark.png'
 import visaLight from '../assets/visaLight.png'
 import chip from '../assets/chip.png'
+import './Card.css'
 
 export default class Card extends Component {
 
   static defaultProps = {
     bankName: 'Bank Name',
-    cardHolder: 'Andrew Smith',
-    cardNumber: '**** **** **** ****',
+    cardHolder: 'Card Holder',
+    cardNumber: '****************',
     issuer: '',
     theme: 'light',
   }
+
+  formatCardNumber = () => this.props.cardNumber.match(/.{4}/g).join(' ');
 
   currentTheme = () => {
     const { theme } = this.props
@@ -66,19 +68,19 @@ export default class Card extends Component {
   }
 
   render() {
-    const { bankName, cardHolder, cardNumber } = this.props
+    const { bankName, cardHolder } = this.props
     const currentTheme = this.currentTheme()
     return (
       <div className="Card-container" style={{ backgroundImage: currentTheme.background }}>
-        <div className="Card-bank-name" style={{color: currentTheme.color}}>
+        <div className="Card-bank-name" style={{ color: currentTheme.color }}>
           {bankName}
         </div>
         <img src={chip} className="Card-chip"/>
-        <div className="Card-bank-number" style={{color: currentTheme.color}}>
-          {cardNumber}
+        <div className="Card-bank-number" style={{ color: currentTheme.color }}>
+          {this.formatCardNumber()}
         </div>
         <div className="Card-bottom-row">
-          <div className="Card-name-holder" style={{color: currentTheme.color}}>
+          <div className="Card-name-holder" style={{ color: currentTheme.color }}>
             {cardHolder}
           </div>
           {this.renderIssuer()}

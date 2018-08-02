@@ -13,14 +13,14 @@ class App extends Component {
             <Card
               bankName='ANZ Bank'
               cardHolder='Andrew White'
-              cardNumber='1234 5678 9876 5432'
+              cardNumber='1234567898765432'
               issuer='mastercard'
               theme='light'
             />
             <Card
               bankName='ANZ Bank'
               cardHolder='Andrew White'
-              cardNumber='1234 5678 9876 5432'
+              cardNumber='1234567898765432'
               issuer='mastercard'
               theme='dark'
             />
@@ -29,14 +29,14 @@ class App extends Component {
             <Card
               bankName='ME Bank'
               cardHolder='Benny Doe'
-              cardNumber='4321 1234 5555 5454'
+              cardNumber='4321123455555454'
               issuer='visa'
               theme='light'
             />
             <Card
               bankName='ME Bank'
               cardHolder='Benny Doe'
-              cardNumber='4321 1234 5555 5454'
+              cardNumber='4321123455555454'
               issuer='visa'
               theme='dark'
             />
