@@ -54,6 +54,7 @@
     "test": "node scripts/test.js --env=jsdom",
     "buildsrc": "rm -rf dist && NODE_ENV=production babel src --out-dir dist --copy-files --ignore __tests__,spec.js,test.js,__snapshots__"
   },
+  "files": [ "dist" ],
   "jest": {
     "collectCoverageFrom": [
       "src/**/*.{js,jsx,mjs}"
