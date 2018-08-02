@@ -30,3 +30,5 @@ npm install --save react-credit-card-payment
 - `cardNumber` (string): Card number for the card. Default value is '**** **** **** ****'
 - `issuer` (string): Set the issuer for the card. Default value is empty. (valid value: 'mastercard' | 'visa')
 - `theme` (string): Theme of the card. Default value is 'light'. (valid value: 'light' | 'dark')
+
+Copyright Timothy Alfares 2018

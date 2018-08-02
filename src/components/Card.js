@@ -38,6 +38,7 @@ export default class Card extends Component {
           background: `url(${backgroundDark})`,
         }
         break
+      default:
     }
 
     return currentTheme
@@ -62,9 +63,10 @@ export default class Card extends Component {
         logo = theme === 'dark' ? visaDark : visaLight
         style = 'Card-visa-logo'
         break
+      default:
     }
 
-    return <img src={logo} className={style}/>
+    return <img src={logo} className={style} alt='card logo'/>
   }
 
   render() {
@@ -75,7 +77,7 @@ export default class Card extends Component {
         <div className="Card-bank-name" style={{ color: currentTheme.color }}>
           {bankName}
         </div>
-        <img src={chip} className="Card-chip"/>
+        <img src={chip} className="Card-chip" alt='Chip'/>
         <div className="Card-bank-number" style={{ color: currentTheme.color }}>
           {this.formatCardNumber()}
         </div>
