@@ -17,7 +17,7 @@ npm install --save react-credit-card-payment
     <Card
       bankName='ANZ Bank'
       cardHolder='Andrew White'
-      cardNumber='1234 5678 9876 5432'
+      cardNumber='1234567898765432'
       issuer='mastercard'
       theme='light'
     />
