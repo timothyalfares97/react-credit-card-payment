@@ -1,6 +1,8 @@
 React Credit Card Payment
 ===
 
+React Credit Card Payment is a credit card component for React application that is customizable based on the value and theme.
+
 ![alt text](https://raw.githubusercontent.com/dotaemon99/react-credit-card-payment/master/media/demo.png)
 
 ### Install
